@@ -19,25 +19,25 @@ public class PigWeatherOpenHelper extends SQLiteOpenHelper{
 	 * City表建表语句
 	 *
 	 */
-	public static final String CREATE_CITY="create table Province ("
+	public static final String CREATE_CITY="create table City ("
 	        +"id integer primary key autoincrement,"
-			+"province_name text,"
-	        +"province_code text,"
+			+"city_name text,"
+	        +"city_code text,"
 			+"province_id integer)";
 	/**
 	 * County表建表语句
 	 *
 	 */
-	public static final String CREATE_COUNTY="create table Province ("
+	public static final String CREATE_COUNTY="create table County ("
 	        +"id integer primary key autoincrement,"
-			+"province_name text,"
-	        +"province_code text,"
+			+"county_name text,"
+	        +"county_code text,"
 			+"city_id integer)";
 	
 	public PigWeatherOpenHelper(Context context, String name,
 			CursorFactory factory, int version) {
 		super(context, name, factory, version);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	@Override
