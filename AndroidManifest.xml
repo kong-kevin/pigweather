@@ -11,7 +11,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/pigweather"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -26,6 +26,8 @@
         <activity
              android:name="com.pigweather.app.activity.WeatherActivity">
             </activity>
+            <receiver android:name="receiver.AutoUpdateReceiver"/>
+            <service android:name="service.AutoUpdateService"/>
     </application>
 
 </manifest>
